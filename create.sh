@@ -4,7 +4,7 @@ USERNAME=
 ACCESS_TOKEN=
 
 function create(){
-    if [ ! -d $1 ]
+    if [ -d $1 ]
     then
         echo "The Folder $1 already exists."
     else
