@@ -1,7 +1,7 @@
 @echo off
 
-set USERNAME=raphzahn
-set ACCESS_TOKEN=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
+set USERNAME=
+set ACCESS_TOKEN=
 
 if "%1" == "" (
     echo Please set a name for the Project you want to create
