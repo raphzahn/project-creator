@@ -1,7 +1,7 @@
 @echo off
 
-set USERNAME=
-set ACCESS_TOKEN=
+set USERNAME=raphzahn
+set ACCESS_TOKEN=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
 
 if "%1" == "" (
     echo Please set a name for the Project you want to create
@@ -24,5 +24,7 @@ if "%1" == "" (
         git commit -m ":sparkles: inital commit"
         git remote add origin https://github.com/%USERNAME%/%1.git
         git push -u origin master
+
+        code .
     )
 )
