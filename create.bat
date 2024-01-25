@@ -1,5 +1,6 @@
 @echo off
 
+set USERNAME=
 set ACCESS_TOKEN=
 
 if "%1" == "" (
