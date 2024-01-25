@@ -23,5 +23,7 @@ if "%1" == "" (
         git commit -m ":sparkles: inital commit"
         git remote add origin https://github.com/%USERNAME%/%1.git
         git push -u origin master
+
+        code .
     )
 )
