@@ -1,6 +1,5 @@
 @echo off
 
-set USERNAME=
 set ACCESS_TOKEN=
 
 if "%1" == "" (
@@ -17,7 +16,7 @@ if "%1" == "" (
         npx license MIT
         echo # %1>>README.md
 
-        curl -u "%USERNAME%:%ACCESS_TOKEN%" https://api.github.com/user/repos -d "{\"name\":\"%1\"}"
+        curl -H "Authorization: token %ACCESS_TOKEN%" --data "{\"name\":\"%1\"}" https://api.github.com/user/repos
 
         git init
         git add *
