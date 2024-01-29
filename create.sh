@@ -25,7 +25,6 @@ function create(){
 
             curl -H "Authorization: token $ACCESS_TOKEN" --data '{"name":"'$1'"}' https://api.github.com/user/repos
             
-
             git init
             git add *
             git commit -m ":sparkles: inital commit"
